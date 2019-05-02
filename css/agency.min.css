@@ -50,11 +50,12 @@ body {
 
 .form-label-group {
   position: relative;
+
   margin-bottom: 1rem;
 }
 
 .form-label-group input {
-  height: 3rem;
+  height: 26;
   border-radius: 2rem;
 }
 
@@ -64,8 +65,8 @@ body {
 }
 
 .form-label-group>label {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -65px;
   left: 0;
   display: block;
   width: 100%;
@@ -113,15 +114,12 @@ body {
 .btn-google {
   color: white;
   background-color: #ea4335;
-  function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
 
 .btn-facebook {
   color: white;
   background-color: #3b5998;
 }
+
+
+
